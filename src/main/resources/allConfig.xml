@@ -8,4 +8,5 @@
 
   <import resource="services.xml"/>
 
+  <import resource="beans.xml"/>
 </beans>

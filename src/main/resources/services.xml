@@ -13,6 +13,6 @@
     <!-- additional collaborators and configuration for this bean go here -->
   </bean>
 
-  <!-- more bean definitions for services go here -->
+
 
 </beans>
