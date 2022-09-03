@@ -14,6 +14,7 @@ public class SpringContextBeanScopesAndLifeCycle {
 
     UserService userService = context.getBean(UserService.class);
 
+    System.out.println("commentService class: "+commentService.getClass());
 
     boolean b = commentService.getCommentRepository() == userService.getCommentRepository();
 
