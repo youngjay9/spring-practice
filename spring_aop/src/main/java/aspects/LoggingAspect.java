@@ -40,7 +40,7 @@ public class LoggingAspect {
    * @return
    * @throws Throwable
    */
-  @Around("@annotation(Annotation_Aspect)")
+  @Around("@annotation(AnnotationAspect)")
   public Object annotationAOP(ProceedingJoinPoint joinPoint) throws Throwable {
     String methodName = joinPoint.getSignature().getName();
     Object[] arguments = joinPoint.getArgs();

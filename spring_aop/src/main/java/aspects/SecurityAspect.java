@@ -14,14 +14,14 @@ public class SecurityAspect {
   private Logger logger =
       Logger.getLogger(SecurityAspect.class.getName());
 
-  @Around("@annotation(Annotation_Aspect)")
+  @Around("@annotation(AnnotationAspect)")
   public Object secure(ProceedingJoinPoint joinPoint) throws Throwable {
 
     String methodName = joinPoint.getSignature().getName();
     Object[] arguments = joinPoint.getArgs();
 
     logger.info(
-        "Security Aspect: Calling the  @Annotation_Aspect intercepted method:" + methodName + " with params: " + Arrays
+        "Security Aspect: Calling the  @AnnotationAspect intercepted method:" + methodName + " with params: " + Arrays
             .asList(arguments));
 
     // 呼叫 proceed, 會先執行下一個 Aspect or intercepted method

@@ -18,7 +18,7 @@ import services.CommentService;
 public class ProjectConfig {
 
   /**
-   * 把 Aspect 的 class 放進 spring context 控管
+   * 執行 AOP 的 class 需放進 spring context 控管
    *
    * @return
    */

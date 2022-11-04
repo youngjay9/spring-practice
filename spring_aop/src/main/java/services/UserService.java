@@ -1,6 +1,6 @@
 package services;
 
-import aspects.Annotation_Aspect;
+import aspects.AnnotationAspect;
 import java.util.logging.Logger;
 import model.Comment;
 import org.springframework.stereotype.Service;
@@ -10,7 +10,7 @@ public class UserService {
 
   private Logger logger = Logger.getLogger(CommentService.class.getName());
 
-  @Annotation_Aspect
+  @AnnotationAspect
   public void readComment(Comment comment) {
     logger.info("User read comment: " + comment.getText());
   }
