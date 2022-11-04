@@ -46,13 +46,13 @@ public class LoggingAspect {
     Object[] arguments = joinPoint.getArgs();
 
     logger.info(
-        "Logging Aspect: Calling the @Annotation_Aspect intercepted method:" + methodName + " with params: " + Arrays
+        "Logging Aspect: Calling the @AnnotationAspect intercepted method:" + methodName + " with params: " + Arrays
             .asList(arguments));
 
     // 呼叫 proceed, 會先執行下一個 Aspect or intercepted method
     Object returnedByMethod = joinPoint.proceed();
 
-    logger.info("Logging Aspect: @Annotation_Aspect intercepted method executed and returned " +
+    logger.info("Logging Aspect: @AnnotationAspect intercepted method executed and returned " +
         returnedByMethod);
 
     return returnedByMethod;
